@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource>
+        <file alias="model.pb">model.pb</file>
+        <file alias="model.pbtxt">model.pbtxt</file>
+        <file alias="labels.txt">labels.txt</file>
+        <file alias="urls.txt">urls.txt</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>640</width>
+                <height>480</height>
+            </rect>
+        </property>
+        <property name="baseSize">
+            <size>
+                <width>640</width>
+                <height>480</height>
+            </size>
+        </property>
+        <property name="windowTitle">
+            <string>Zdravopit</string>
+        </property>
+        <property name="unifiedTitleAndToolBarOnMac">
+            <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
+                <property name="spacing">
+                    <number>0</number>
+                </property>
+                <property name="leftMargin">
+                    <number>12</number>
+                </property>
+                <property name="topMargin">
+                    <number>12</number>
+                </property>
+                <property name="rightMargin">
+                    <number>12</number>
+                </property>
+                <property name="bottomMargin">
+                    <number>12</number>
+                </property>
+                <item>
+                    <widget class="QGroupBox" name="mainGroupBox">
+                        <property name="title">
+                            <string/>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,0">
+                            <item>
+                                <widget class="QLabel" name="videoView">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>QFrame::StyledPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>QFrame::Raised</enum>
+                                    </property>
+                                    <property name="text">
+                                        <string/>
+                                    </property>
+                                    <property name="scaledContents">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignCenter</set>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QLineEdit" name="filePath">
+                                    <property name="readOnly">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="clearButtonEnabled">
+                                        <bool>false</bool>
+                                    </property>
+                                </widget>
+                            </item>
+                        </layout>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QGroupBox" name="sideBar">
+                        <property name="sizePolicy">
+                            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="maximumSize">
+                            <size>
+                                <width>160</width>
+                                <height>16777215</height>
+                            </size>
+                        </property>
+                        <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                        </property>
+                        <property name="flat">
+                            <bool>false</bool>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,0">
+                            <property name="spacing">
+                                <number>-1</number>
+                            </property>
+                            <property name="leftMargin">
+                                <number>0</number>
+                            </property>
+                            <property name="topMargin">
+                                <number>12</number>
+                            </property>
+                            <property name="rightMargin">
+                                <number>0</number>
+                            </property>
+                            <property name="bottomMargin">
+                                <number>12</number>
+                            </property>
+                            <item alignment="Qt::AlignHCenter">
+                                <widget class="QScrollArea" name="scrollArea">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                            <horstretch>1</horstretch>
+                                            <verstretch>1</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>146</width>
+                                            <height>0</height>
+                                        </size>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>146</width>
+                                            <height>16777215</height>
+                                        </size>
+                                    </property>
+                                    <property name="autoFillBackground">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>QFrame::Sunken</enum>
+                                    </property>
+                                    <property name="horizontalScrollBarPolicy">
+                                        <enum>Qt::ScrollBarAlwaysOff</enum>
+                                    </property>
+                                    <property name="widgetResizable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignHCenter|Qt::AlignTop</set>
+                                    </property>
+                                    <widget class="QWidget" name="scrollAreaWidgetContents">
+                                        <property name="enabled">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="geometry">
+                                            <rect>
+                                                <x>4</x>
+                                                <y>0</y>
+                                                <width>136</width>
+                                                <height>276</height>
+                                            </rect>
+                                        </property>
+                                        <property name="sizePolicy">
+                                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>136</width>
+                                                <height>16777215</height>
+                                            </size>
+                                        </property>
+                                        <layout class="QVBoxLayout" name="verticalLayout_4">
+                                            <property name="spacing">
+                                                <number>-1</number>
+                                            </property>
+                                            <property name="leftMargin">
+                                                <number>0</number>
+                                            </property>
+                                            <property name="topMargin">
+                                                <number>6</number>
+                                            </property>
+                                            <property name="rightMargin">
+                                                <number>0</number>
+                                            </property>
+                                            <property name="bottomMargin">
+                                                <number>0</number>
+                                            </property>
+                                        </layout>
+                                    </widget>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="QGroupBox" name="settingsBar">
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>0</width>
+                                            <height>133</height>
+                                        </size>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignCenter</set>
+                                    </property>
+                                    <property name="flat">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="checkable">
+                                        <bool>false</bool>
+                                    </property>
+                                    <layout class="QVBoxLayout" name="verticalLayout_3">
+                                        <property name="leftMargin">
+                                            <number>2</number>
+                                        </property>
+                                        <property name="topMargin">
+                                            <number>2</number>
+                                        </property>
+                                        <property name="rightMargin">
+                                            <number>2</number>
+                                        </property>
+                                        <property name="bottomMargin">
+                                            <number>2</number>
+                                        </property>
+                                        <item>
+                                            <widget class="QComboBox" name="modeSelect">
+                                                <property name="editable">
+                                                    <bool>false</bool>
+                                                </property>
+                                                <property name="currentText">
+                                                    <string>Файл</string>
+                                                </property>
+                                                <property name="currentIndex">
+                                                    <number>0</number>
+                                                </property>
+                                                <property name="maxVisibleItems">
+                                                    <number>2</number>
+                                                </property>
+                                                <property name="sizeAdjustPolicy">
+                                                    <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+                                                </property>
+                                                <property name="frame">
+                                                    <bool>true</bool>
+                                                </property>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>Файл</string>
+                                                    </property>
+                                                </item>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>Камера</string>
+                                                    </property>
+                                                </item>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <widget class="QStackedWidget" name="stackedWidget">
+                                                <property name="styleSheet">
+                                                    <string notr="true"/>
+                                                </property>
+                                                <property name="frameShape">
+                                                    <enum>QFrame::StyledPanel</enum>
+                                                </property>
+                                                <property name="frameShadow">
+                                                    <enum>QFrame::Plain</enum>
+                                                </property>
+                                                <property name="currentIndex">
+                                                    <number>0</number>
+                                                </property>
+                                                <widget class="QWidget" name="fileBox">
+                                                    <property name="sizePolicy">
+                                                        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                            <horstretch>0</horstretch>
+                                                            <verstretch>0</verstretch>
+                                                        </sizepolicy>
+                                                    </property>
+                                                    <layout class="QVBoxLayout" name="verticalLayout">
+                                                        <item>
+                                                            <widget class="QPushButton" name="chooseFileButton">
+                                                                <property name="text">
+                                                                    <string>Выбрать файл</string>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                        <item>
+                                                            <widget class="QPushButton" name="processFileButton">
+                                                                <property name="enabled">
+                                                                    <bool>true</bool>
+                                                                </property>
+                                                                <property name="text">
+                                                                    <string>Обработать</string>
+                                                                </property>
+                                                                <property name="checkable">
+                                                                    <bool>false</bool>
+                                                                </property>
+                                                                <property name="checked">
+                                                                    <bool>false</bool>
+                                                                </property>
+                                                                <property name="autoDefault">
+                                                                    <bool>false</bool>
+                                                                </property>
+                                                                <property name="default">
+                                                                    <bool>false</bool>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </widget>
+                                                <widget class="QWidget" name="cameraBox">
+                                                    <layout class="QVBoxLayout" name="verticalLayout_7">
+                                                        <item>
+                                                            <widget class="QPushButton" name="beginCameraButton">
+                                                                <property name="text">
+                                                                    <string>Начать</string>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                        <item>
+                                                            <widget class="QPushButton" name="makePhotoButton">
+                                                                <property name="text">
+                                                                    <string>Фото</string>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </widget>
+                                            </widget>
+                                        </item>
+                                    </layout>
+                                </widget>
+                            </item>
+                        </layout>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+    </widget>
+    <resources/>
+    <connections>
+        <connection>
+            <sender>modeSelect</sender>
+            <signal>currentIndexChanged(int)</signal>
+            <receiver>stackedWidget</receiver>
+            <slot>setCurrentIndex(int)</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>571</x>
+                    <y>349</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>503</x>
+                    <y>382</y>
+                </hint>
+            </hints>
+        </connection>
+    </connections>
+</ui>
