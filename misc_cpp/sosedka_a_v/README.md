@@ -1,0 +1,1 @@
+Some leftovers from opencv course in uni, circa 2021.

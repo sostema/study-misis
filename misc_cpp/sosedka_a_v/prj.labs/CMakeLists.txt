@@ -1,0 +1,15 @@
+get_filename_component(CurrentDir ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+string(REPLACE " " "." CurrentDir ${CurrentDir})
+IF(NOT "${ParentProject}" STREQUAL "")
+    set(ParentProject ${ParentProject}.${CurrentDir})
+ELSE()
+    set(ParentProject ${CurrentDir})
+ENDIF()
+
+FILE(GLOB subdirectories "./*")
+
+foreach (subdirectory IN ITEMS ${subdirectories})
+    IF (IS_DIRECTORY ${subdirectory} AND EXISTS ${subdirectory}/CMakeLists.txt)
+        add_subdirectory(${subdirectory})
+    endif ()
+endforeach ()

@@ -1,0 +1,27 @@
+PROJECT(Mosaic_lib)
+
+add_library(${PROJECT_NAME} SHARED mosaic.cpp)
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} Tilegen_lib Superpixel_lib)
+
+set_target_properties(${PROJECT_NAME}
+        PROPERTIES
+        PUBLIC_HEADER mosaic.h
+        OUTPUT_NAME "mosaic"
+        CXX_STANDARD 11
+        )
+
+target_include_directories(${PROJECT_NAME} PRIVATE .)
+
+install(TARGETS ${PROJECT_NAME}
+        CONFIGURATIONS Debug
+        LIBRARY
+        DESTINATION dbg/lib
+        PUBLIC_HEADER
+        DESTINATION dbg/include)
+
+install(TARGETS ${PROJECT_NAME}
+        CONFIGURATIONS Release
+        LIBRARY
+        DESTINATION rel/lib
+        PUBLIC_HEADER
+        DESTINATION rel/include)
